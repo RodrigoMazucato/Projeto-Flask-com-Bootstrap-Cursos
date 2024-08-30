@@ -1,0 +1,3 @@
+Titulo: JavaScript
+Descricao: Domine a linguagem de programação JavaScript e aprenda a criar interatividade em suas páginas web e aplicativos dinâmicos.
+Detalhes: Este curso de JavaScript oferece uma imersão completa na linguagem que é o coração da interatividade na web. Você começará aprendendo conceitos fundamentais, como variáveis, funções e loops, antes de avançar para manipulação do DOM, eventos e AJAX. Além disso, o curso aborda conceitos avançados, como programação orientada a objetos e a introdução a frameworks populares. Ao final, você será capaz de desenvolver desde pequenas funcionalidades até aplicações web completas, tornando suas páginas mais dinâmicas e responsivas às ações dos usuários.

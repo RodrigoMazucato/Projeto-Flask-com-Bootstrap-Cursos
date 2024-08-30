@@ -1,0 +1,3 @@
+Titulo: HTML
+Descricao: Aprenda os fundamentos do HTML e comece a criar suas próprias páginas web do zero. Ideal para iniciantes que desejam dar os primeiros passos.
+Detalhes: Neste curso de HTML, você descobrirá como estruturar conteúdo na web usando tags e elementos essenciais. Desde a criação de títulos, parágrafos e links, até o desenvolvimento de formulários e tabelas, o curso oferece uma visão abrangente das melhores práticas de HTML. Ao final, você estará apto a construir páginas web funcionais e esteticamente agradáveis, que servem como base sólida para aprender outras tecnologias web, como CSS e JavaScript. Ideal para quem está começando ou para profissionais que desejam reforçar seus conhecimentos.

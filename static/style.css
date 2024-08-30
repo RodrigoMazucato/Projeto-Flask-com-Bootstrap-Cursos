@@ -1,0 +1,72 @@
+* {
+  scroll-margin-top: 120px;
+}
+
+body {
+  font-family: Poppins;
+  padding-top: 100px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+header {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+}
+
+footer div {
+  color: white;
+  margin: auto;
+  width: 80%;
+}
+
+#cursos img {
+  height: 25vh;
+  margin: auto;
+  width: 25vh;
+}
+
+.acordion-button p {
+  font-weight: bold;
+}
+
+.alert-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.carousel-inner img {
+  height: 25rem;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}

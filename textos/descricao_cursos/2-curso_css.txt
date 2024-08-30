@@ -1,0 +1,3 @@
+Titulo: CSS
+Descricao: Aprenda a estilizar suas páginas web com CSS, desde o design básico até técnicas avançadas de layout e responsividade para criar sites mais modernos.
+Detalhes: No curso de CSS, você explorará o poder de estilizar e dar vida às suas páginas web. Começando com conceitos básicos, como cores, fontes e margens, você avançará para técnicas mais complexas, como flexbox, grid layout e media queries, que tornam suas páginas adaptáveis a diferentes dispositivos. Além disso, o curso aborda animações e transições, permitindo que você crie interfaces dinâmicas e envolventes. Este curso é ideal tanto para iniciantes quanto para desenvolvedores que querem aprimorar suas habilidades de design web.

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/images/logo.png" />
+    <title>Cursos Tecnologia</title>
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../static/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Scripts com defer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../static/script.js" defer></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNavDropdown"
+    data-bs-offset="-25"
+    tabindex="0"
+  >
+    <header>
+      <nav
+        class="navbar bg-primary navbar-expand-lg mb-5"
+        data-bs-theme="dark"
+        id="navbarNavDropdown"
+      >
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="#">
+            <img src="../static/images/logo.png" alt="Logo TI" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cursos-front">Front-end</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link" href="#cursos-back">Back-end</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link" href="#qa">Q&A</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-success dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Inscreva-se
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#lista-espera"
+                        >Lista de espera</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container" id="home">
+      <div class="row">
+        <div
+          class="col-6 d-flex flex-column justify-content-center align-items-center gap-4 px-3"
+        >
+          <h1 class="fw-semibold">Transforme Seu Futuro com a Tecnologia</h1>
+          <p>
+            Domine as ferramentas mais recentes e impulsione sua carreira com
+            nossos cursos de tecnologia, projetados para colocá-lo à frente no
+            mercado.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-5"
+            style="font-size: 1.25rem"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Explore as Vantagens
+          </button>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog mt-5">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Vantagens do curso
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Por que escolher nosso curso?</h6>
+                  <ul>
+                    <li>
+                      <strong>Conteúdo Atualizado:</strong> Mantenha-se à frente
+                      com material de curso sempre atualizado para refletir as
+                      últimas tendências e tecnologias.
+                    </li>
+                    <li>
+                      <strong>Aprendizado Prático:</strong> Projetos e
+                      exercícios práticos que simulam desafios reais enfrentados
+                      no mercado de trabalho.
+                    </li>
+                    <li>
+                      <strong>Certificação Reconhecida:</strong> Receba um
+                      certificado de conclusão que é valorizado por empregadores
+                      e instituições educacionais.
+                    </li>
+                    <li>
+                      <strong>Suporte e Comunidade:</strong> Acesso a fóruns de
+                      discussão e suporte contínuo para esclarecer dúvidas e
+                      compartilhar conhecimentos.
+                    </li>
+                    <li>
+                      <strong>Flexibilidade:</strong> Estude no seu ritmo com
+                      acesso a materiais e gravações de aulas a qualquer
+                      momento.
+                    </li>
+                    <li>
+                      <strong>Networking:</strong> Oportunidades de conectar-se
+                      com outros alunos e profissionais da área durante o curso.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="../static/images/programador.png"
+            alt="Programação"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="cursos-front">
+      <h1 class="text-center my-5">Cursos de Front-end</h1>
+      <div id="cursos" class="row d-flex justify-content-between">
+        {% for chave, valor in cursos.items() %}
+        <div class="col text-center" style="width: 20rem">
+          <div class="card p-1">
+            <h4 class="card-title my-3">{{chave}}</h4>
+            <img
+              src="../static/images/{{chave | lower}}.png"
+              class="card-img-top"
+              alt="HTML 5"
+            />
+            <div class="card-body">
+              <p class="card-text">{{valor.descricao}}</p>
+
+              <button
+                class="btn btn-primary w-100"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse{{chave}}"
+                aria-expanded="false"
+                aria-controls="collapse{{chave}}"
+              >
+                Saiba mais
+              </button>
+              <div class="collapse" id="collapse{{chave}}">
+                <div class="card card-body mt-4">
+                  <p class="small-text">{{valor.detalhes}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="container" id="cursos-back">
+      <h1 class="text-center my-5">Cursos de Back-end</h1>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide bg-dark"
+        style="width: 70%; margin: auto"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../static/images/python.webp"
+              class="d-block w-100"
+              alt="Python"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../static/images/java.png"
+              class="d-block w-100"
+              alt="Java"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../static/images/php.jpg"
+              class="d-block w-100"
+              alt="PHP"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../static/images/ruby.png"
+              class="d-block w-100"
+              alt="Ruby"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="qa" class="container mb-5" style="width: 70%">
+      <h1 class="text-center my-5">
+        Perguntas e Respostas
+        <span class="badge rounded-pill text-bg-primary">Q&A</span>
+      </h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              <strong
+                >1. Quais são os requisitos para se inscrever nos
+                cursos?</strong
+              >
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Não há pré-requisitos específicos para se inscrever nos nossos
+              cursos. Todos os cursos são projetados para acomodar tanto
+              iniciantes quanto pessoas que já possuem algum conhecimento. Para
+              os cursos mais avançados, recomendamos que você tenha uma
+              compreensão básica dos conceitos de programação ou design, mas não
+              é obrigatório.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <strong>2. Como posso acessar o material do curso?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Todo o material do curso estará disponível online, através de
+              nossa plataforma de aprendizagem. Após a inscrição, você receberá
+              um login que permitirá o acesso ao conteúdo do curso, incluindo
+              vídeos, exercícios, e materiais adicionais.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              <strong>3. Os cursos oferecem certificado de conclusão?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sim, ao concluir qualquer um dos nossos cursos, você receberá um
+              certificado digital que pode ser compartilhado em suas redes
+              sociais, como LinkedIn, ou incluído no seu currículo para destacar
+              suas habilidades recém-adquiridas.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              <strong>4. Posso assistir às aulas no meu próprio ritmo?</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sim, todos os nossos cursos são totalmente flexíveis, permitindo
+              que você estude no seu próprio ritmo. Você pode acessar o conteúdo
+              a qualquer momento e revisar as aulas quantas vezes quiser.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+            >
+              <strong
+                >5. Existe suporte caso eu tenha dúvidas durante o
+                curso?</strong
+              >
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Sim, oferecemos suporte completo aos nossos alunos. Você pode
+              enviar suas dúvidas através do fórum da comunidade, onde
+              instrutores e outros alunos poderão ajudá-lo. Além disso, alguns
+              cursos oferecem sessões de mentoria ao vivo para resolver dúvidas
+              mais específicas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form
+      action=""
+      class="border rounded p-5 bg-dark text-light"
+      id="lista-espera"
+    >
+      <h1 class="text-center mt-2 mb-4">Entre na nossa lista de espera!</h1>
+      <div style="width: 90%; margin: auto">
+        <div class="mb-3">
+          <label for="campo-nome" class="form-label">Nome: </label>
+          <input
+            type="text"
+            class="form-control"
+            id="campo-nome"
+            placeholder="Digite seu nome..."
+          />
+        </div>
+        <div class="mb-3">
+          <label for="campo-email" class="form-label">Email:</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="campo-email-local"
+              placeholder="Seu e-mail"
+              aria-label="Email local"
+            />
+            <span class="input-group-text">@</span>
+            <input
+              type="text"
+              class="form-control"
+              id="campo-email-domain"
+              placeholder="dominio.com"
+              aria-label="Dominio"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="campo-telefone" class="form-label">Telefone: </label>
+          <input
+            type="number"
+            class="form-control"
+            id="campo-telefone"
+            placeholder="Digite seu telefone..."
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label"
+            >Qual área da programação você prefere?
+          </label>
+          <select class="form-select" aria-label="Default select example">
+            <option value="front" selected>Front-end</option>
+            <option value="back">Back-End</option>
+            <option value="full">Full-Stack</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"
+            >Quais cursos você tem tem interesse?
+          </label>
+
+          <div class="mt-1">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-html"
+                value="html"
+              />
+              <label class="form-check-label" for="check-html">HTML</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-css"
+                value="css"
+              />
+              <label class="form-check-label" for="check-css">CSS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-js"
+                value="js"
+              />
+              <label class="form-check-label" for="check-js">Javascript</label>
+            </div>
+          </div>
+
+          <div class="mt-2">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-python"
+                value="python"
+              />
+              <label class="form-check-label" for="check-python">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-java"
+                value="java"
+              />
+              <label class="form-check-label" for="check-java">Java</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-php"
+                value="php"
+              />
+              <label class="form-check-label" for="check-php">PHP</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="check-ruby"
+                value="ruby"
+              />
+              <label class="form-check-label" for="check-ruby">Ruby</label>
+            </div>
+          </div>
+        </div>
+        <label for="customRange1" class="form-label"
+          >Nível de programação:</label
+        >
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="10"
+          id="customRange1"
+        />
+        <div class="d-flex justify-content-between">
+          <span>Básico</span>
+          <span>Intermediário</span>
+          <span>Avançado</span>
+        </div>
+
+        <div class="my-4">
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              id="campo-textarea"
+              placeholder="Eu espero que esse curso..."
+              rows="3"
+              style="height: 100px"
+            ></textarea>
+            <label for="campo-textarea" style="color: black"
+              >Expectativas para o curso:</label
+            >
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn btn-outline-primary mt-4 btn-lg w-50"
+            id="liveAlertBtn"
+          >
+            ENVIAR
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <div
+      id="liveAlertPlaceholder"
+      class="mt-5"
+      style="margin: auto; width: 70%"
+    ></div>
+
+    <footer class="bg-dark w-100 mb-0">
+      <div
+        class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 mt-5 mb-0"
+      >
+        <p class="col-md-5 mb-0">© 2024 Cursos TI, Inc</p>
+
+        <a
+          href="/"
+          class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-light text-decoration-none"
+        >
+          <img src="../static/images/logo.png" alt="Logo TI" class="logo" />
+        </a>
+
+        <ul class="nav col-md-5 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-light">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cursos-front" class="nav-link px-2 text-light"
+              >Front-End</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#cursos-back" class="nav-link px-2 text-light">Back-end</a>
+          </li>
+          <li class="nav-item">
+            <a href="#qa" class="nav-link px-2 text-light">Q&A</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lista-espera" class="nav-link px-2 text-light"
+              >Inscreva-se</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
